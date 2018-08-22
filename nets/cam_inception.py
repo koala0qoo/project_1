@@ -6,7 +6,7 @@ import time
 import numpy as np
 import tensorflow as tf
 
-import inception_v4
+from nets import inception_v4
 from nets import inception_utils
 
 slim = tf.contrib.slim
