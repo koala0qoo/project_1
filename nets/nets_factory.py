@@ -64,7 +64,7 @@ networks_map = {'alexnet_v2': alexnet.alexnet_v2,
                 'nasnet_mobile': nasnet.build_nasnet_mobile,
                 'nasnet_large': nasnet.build_nasnet_large,
                 'densenet': densenet.densenet,
-                'cam_inception': cam_inception.cam_classifier
+                'cam_inception': cam_inception.cam_inception
                }
 
 arg_scopes_map = {'alexnet_v2': alexnet.alexnet_v2_arg_scope,
