@@ -21,7 +21,7 @@ def cam_inception(inputs, num_classes=number_of_classes, is_training=True, reuse
     with tf.variable_scope('InceptionV4',[inputs], reuse=reuse) as scope:
         with slim.arg_scope([slim.batch_norm, slim.dropout],
                             is_training=is_training):
-            net, end_points = inception_v4_base(inputs, scope=scope)
+            net, end_points = inception_v4.inception_v4_base(inputs, scope=scope)
 
     inception_c_feature = net
     with tf.variable_scope('cam_classifier/A'):
