@@ -12,7 +12,7 @@ from nets import inception_utils
 slim = tf.contrib.slim
 
 
-number_of_classes = 763
+number_of_classes = 764
 
 
 # Define the model that we want to use -- specify to use only two classes at the last layer
