@@ -13,7 +13,7 @@ def parse_args(check=True):
     parser.add_argument('--dataset_dir', type=str)
     parser.add_argument('--checkpoint_path', type=str, default='')
     parser.add_argument('--model_name', type=str, default='inception_v4')
-    parser.add_argument('--checkpoint_exclude_scopes', type=str, default='InceptionV4/Logits,InceptionV4/AuxLogits/Aux_logits')
+    parser.add_argument('--checkpoint_exclude_scopes', type=str, default='InceptionV4/Logits,InceptionV4/AuxLogits/Aux_logits,cam_classifier/A/AvgPool_1a,cam_classifier/A/Flatten,cam_classifier/A/conv3_1x1')
     parser.add_argument('--train_dir', type=str)
     parser.add_argument('--learning_rate', type=float, default=0.001)
     parser.add_argument('--clone_on_cpu', type=bool, default=False)
